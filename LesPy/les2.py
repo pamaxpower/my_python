@@ -10,6 +10,7 @@ print(new_string('!', 5))   # !!!!!
 
 
 def new_string2(symbol, count = 3):
+    """ger"""
     return symbol * count
 print(new_string2('!', 5))      # !!!!!
 print(new_string2('!'))         # !!!   - параметр count задан по умолчанию

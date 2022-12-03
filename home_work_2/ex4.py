@@ -19,9 +19,10 @@ text = input('Введите строку текста: ')
 mylist = text.split()
 print(mylist)
 
-for i in range(len(mylist)):
-    new_text = mylist[i]
+for el in mylist:
+    new_text = mylist[el]
     if len(new_text) > 10:
         print(new_text[0:10])
     else:
-        print(mylist[i])
+        print(mylist[el])
+        

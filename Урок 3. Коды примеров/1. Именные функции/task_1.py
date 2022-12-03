@@ -15,13 +15,14 @@ def ext_func(var_1):
     return int_func
 
 
-f_obj = ext_func(200)  # f_obj - функция
-print(f_obj(300))  # -> 500
+f_obj = ext_func(200)       # f_obj - функция
+print(f_obj(300))           # -> 500
 
 
-def my_func():
-    pass
+def my_func():              # функция нужна, но мы пока не знаем ее кода.
+    pass                    # заглушка
 
 
 
-print(type(my_func()))  # -> None
+print(type(my_func()))          # -> None
+print(type(my_func))            # class function

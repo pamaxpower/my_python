@@ -11,5 +11,3 @@ for key in range(1, n+1):                # перебираем значение
 
 print(dict)                             # выводим на печать
 
-
-print('(1+\trac 1 n)^n')

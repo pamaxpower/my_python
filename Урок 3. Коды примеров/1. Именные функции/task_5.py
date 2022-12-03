@@ -11,6 +11,9 @@ print(first_func(10, 20, 30))  # -> 60
 
 # именованные параметры
 def second_func(var_3, var_1, var_2):
+    """ 
+    h
+    """
     print(f"var_2 - {var_2}; var_1 - {var_1}; var_3 - {var_3}")  # -> var_2 - 20; var_1 - 10; var_3 - 30
 
 
