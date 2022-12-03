@@ -17,7 +17,6 @@ res = []
 for i in range(len(my_list)):
     x = my_list[i] - int(my_list[i])    # находим дробную часть
     res.append(x)                       # добавляем ее в новый
-    print(res)
 
 total = max(res) - min(res)             # находим min и max и складываем их
 

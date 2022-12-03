@@ -26,13 +26,14 @@ def my_func(word):
     """
     mylist = list(word)             # преобразуем строчку в список
     mylist[0] = mylist[0].upper()   # меняем регистр 0-элемента
-    return print(''.join(mylist))   # преобразем строчку в список
+    return print(''.join(mylist), end=' ')   # преобразем строчку в список
 
 
-text = input()
+text = input('Введите текст: ')
 string = text.split()
 for el in string:
     my_func(el)
     
-my_func(text)
-print(int_func(text))
+#my_func(text)
+
+print(f'\n{int_func(text)}')
