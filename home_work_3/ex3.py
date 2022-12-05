@@ -22,11 +22,11 @@ def sum_max_elements(a, b, c):
     return total
 
 
-def sum(a, b, c):
+def sum_elements(a, b, c):
     total = a + b + c - min(a, b, c)
     return total
 
 
 n1, n2, n3 = int(input()), int(input()), int(input())
-print(f'Первый спсособ: {sum(n1, n2, n3)}')
+print(f'Первый спсособ: {sum_elements(n1, n2, n3)}')
 print(f'Второй способ: {sum_max_elements(n1, n2, n3)}')

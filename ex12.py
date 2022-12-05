@@ -1,10 +1,9 @@
-my_list = [9, 7, 5, 5, 5, 3, 3, 2, 1]
-print(my_list)
-print()
-for i in my_list:
-    print(i, end='')
-print()
+# Задайте натуральное число N. 
+# Напишите программу, которая составит список простых множителей числа N.
 
-for j in range(len(my_list)):
-
-    print(j, my_list[j])
+a = int(input('Enter the number: '))
+list = []
+for i in range(2, a+1):
+    if a % i == 0:
+      list.append(i)
+print(f'{a} = {list}')
