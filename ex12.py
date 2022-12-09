@@ -1,9 +1,13 @@
-# Задайте натуральное число N. 
-# Напишите программу, которая составит список простых множителей числа N.
-
-a = int(input('Enter the number: '))
-list = []
-for i in range(2, a+1):
-    if a % i == 0:
-      list.append(i)
-print(f'{a} = {list}')
+s = str('это строка')
+print(s.capitalize())
+print(s.casefold())
+print(s.center(1))
+print(s.count(' '))
+print(s.encode())
+print(s.endswith('j'))
+print(s.find('о'))
+print(s.format())
+print(s.format_map())
+print(s.index(5))
+print(s.zfill())
+s.lower()
