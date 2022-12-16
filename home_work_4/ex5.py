@@ -9,6 +9,9 @@ from functools import reduce
 
 mylist = [el for el in range(100, 1001) if el % 2 == 0]
 
+res = reduce(lambda x, y: x * y, mylist)
+print(res)
+
 
 def my_func(prev_el, el):
     """

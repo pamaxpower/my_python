@@ -1,7 +1,29 @@
+from timeit import timeit
+from memory_profiler import profile
 
-my_list = [9, 7, 5, 5, 5, 3, 3, 2, 1]
-rating = int(input('Введите элемент рейтинга: '))
-for i in range(len(my_list)):
-    if my_list[i] == rating:
-        my_list.insert(i, rating)
-print(my_list)
+x = 123
+
+@profile
+def sum_digit(num):
+    total = 0
+    while num > 0:
+        digit = num % 10
+        total += digit
+        num = num // 10
+    return total
+
+@profile
+def print_digit_sum(a):
+    lst = {int(i) for i in str(a)}
+    sum(lst)
+
+
+sum_digit(x)
+#print(f'1 способ: {timeit("sum_digit(x)",  globals=globals(), number=100000)}')
+# 1 способ: 0.203022400382906
+
+
+print_digit_sum(x)
+#print(f'2 способ: {timeit("print_digit_sum(x)",  globals=globals(), number=100000)}')
+# 2 способ: 0.23104560002684593
+
