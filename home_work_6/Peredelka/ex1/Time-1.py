@@ -11,14 +11,6 @@
 from timeit import timeit
 
 
-# with open('text.txt', 'r+', encoding="utf-8") as text4:
-#     with open('file.txt', 'w', encoding="utf-8") as file:
-#         mylist = text4.readlines()
-#         new_text = []
-#         for el in mylist:
-#             new_text.append(el.lower())
-#         file.writelines(new_text)
-
 def int_func(word):
 
     """
@@ -46,17 +38,26 @@ with open('file.txt', 'r', encoding="utf-8") as data:
         text.split()
 
 
-print(timeit("""string = text.split()
+print(timeit("""
+string = text.split()
 for el in string:
-    my_func(el)""", globals=globals(), number=1000))
-
-# Время выполнения: 0.8780914000235498
-
-
-# Применил встроенный метод title()
+    my_func(el)
+""", globals=globals(), number=1000))
 
 
 print(f'\n{int_func(text)}')
 print(timeit("int_func(text)", globals=globals(), number=1000))
 
-# Время выполнения: 0.009928699990268797 - результат в 88 раз быстрее
+
+"""
+Произвел замеры времени:
+
+1) Первый метод - перебор строки по слову, в котором первая буква меняется на 
+заглавную.
+Потраченное время: 0.4612069000140764
+
+2) Второй метод - использование стандартного метода title()
+Потраченноое время: 0.006474299996625632
+
+Вывод: использование метода title() ускорило работу программы в 71 раз
+"""
