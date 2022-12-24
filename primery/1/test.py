@@ -1,7 +1,7 @@
 
 from unittest import TestCase
 from random import randint
-from cod import *
+import cod
 
 
 class TestFunctions(TestCase):
@@ -15,7 +15,7 @@ class TestFunctions(TestCase):
 
     # L06S04HW02
     def test_more_previous1(self):
-        self.assertListEqual(more_previous(self.lst1), self.res_more_prev)
+        self.assertListEqual(cod.more_previous(self.lst1), self.res_more_prev)
 
     def test_more_previous2(self):
         self.assertFalse(more_previous(self.lst2))
@@ -29,7 +29,7 @@ class TestFunctions(TestCase):
 
     # L11S07HW02
     def test_road1(self):
-        self.assertEqual(Road(20, 5000).get_asphalt(), 12500)
+        self.assertEqual(cod.Road(20, 5000).get_asphalt(), 12500)
 
     def test_road2(self):
         self.assertIsInstance(Road(self.rand * 10, self.rand * 1000), Road)

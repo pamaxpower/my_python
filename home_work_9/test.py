@@ -11,7 +11,7 @@ class TestScripts(unittest.TestCase):
         self.res_large = [7, 23, 44, 10]
         self.cell1 = 10
         self.cell2 = 7
-        pass
+        
 
     def tearDown(self):
         pass
@@ -42,9 +42,11 @@ class TestScripts(unittest.TestCase):
         self.assertIsNot(Cell(20), Cell(20))
 
     def test_cell_2(self):
+        # тест будет пройден, если A не равно B
         self.assertNotEqual(Cell(self.cell1)/Cell(self.cell2), 1)
 
     def test_cell_3(self):
+        # тест будет пройден, если A меньше B
         self.assertLess(self.cell1 - self.cell2, 5)
 
     def test_error(self):

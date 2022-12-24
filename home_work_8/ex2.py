@@ -117,10 +117,9 @@ class Cell:
         return f'Выполняем сложение: {Cell(self.quantity + other.quantity)}\n'
 
     def __sub__(self, other):
-        
         if self.quantity < other.quantity:
-            return f'Неверный результат. Разность количества ячеек меньше ' \
-                   f'нуля\n '
+            return f'Неверный результат. Разность количества ячеек меньше нуля\n'
+            
         else:
             return f'Выполняем вычитание: {Cell(self.quantity - other.quantity)}\n'
 
