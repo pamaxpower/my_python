@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2554f434-fd03-4ab9-8985-727cb7b4630d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1baQEBvO0M0qhQxIdrVn1NcWxEw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Урок_6/Урок 6. Пример практического задания" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
+  </component>
+  <component name="RunManager" selected="Python tests.Unittests for unittest_functions.TestSumKV">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Урок 4. Коды примеров" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python37\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/unittest" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/unittest/unittest_functions.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="unitest_salary" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Урок 4. Коды примеров" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/unittest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/unittest/unitest_salary.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for unittest_functions.TestSumKV" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Урок 4. Коды примеров" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/unittest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;unittest_functions.TestSumKV&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for unittest_functions.TestSumKV.testraises" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Урок 4. Коды примеров" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/unittest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;unittest_functions.TestSumKV.testraises&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests" type="tests" factoryName="Unittests">
+      <module name="Урок 4. Коды примеров" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\Дмитрий\Desktop\november_test\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/unittest/unitest_salary.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.unitest_salary" />
+      <item itemvalue="Python tests.Unittests" />
+      <item itemvalue="Python tests.Unittests for unittest_functions.TestSumKV.testraises" />
+      <item itemvalue="Python tests.Unittests for unittest_functions.TestSumKV" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Unittests for unittest_functions.TestSumKV" />
+        <item itemvalue="Python tests.Unittests for unittest_functions.TestSumKV.testraises" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2554f434-fd03-4ab9-8985-727cb7b4630d" name="Default Changelist" comment="" />
+      <created>1580983930191</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580983930191</updated>
+      <workItem from="1588867612027" duration="2445000" />
+      <workItem from="1595438014272" duration="3521000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="207" y="244" width="1092" height="787" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1671559946724">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="207" y="244" width="1092" height="787" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1671559946724" />
+    <state x="533" y="344" key="FileChooserDialogImpl" timestamp="1671560536464">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="533" y="344" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1671560536464" />
+    <state width="1468" height="298" key="GridCell.Tab.0.bottom" timestamp="1671559954934">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1468" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1671559954934" />
+    <state width="1468" height="298" key="GridCell.Tab.0.center" timestamp="1671559954934">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1468" height="298" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1671559954934" />
+    <state width="1468" height="298" key="GridCell.Tab.0.left" timestamp="1671559954934">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1468" height="298" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1671559954934" />
+    <state width="1468" height="298" key="GridCell.Tab.0.right" timestamp="1671559954934">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1468" height="298" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1671559954934" />
+  </component>
+</project>

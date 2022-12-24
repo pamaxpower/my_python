@@ -12,13 +12,16 @@
 каждого экземпляра.
 """
 
+
 class Stationery:
 
     def __init__(self, title):
         self.title = title
 
-    def draw(self):
+    @staticmethod
+    def draw():
         print("Запуск отрисовки\n")
+
 
 class Pen(Stationery):
 

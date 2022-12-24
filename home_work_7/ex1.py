@@ -14,6 +14,7 @@ color (цвет) и метод running (запуск). Атрибут реали
 """
 from time import sleep
 
+
 class TrafficLight:
     __color = ['Красный', 'Желтый', 'Зеленый']
 
@@ -33,5 +34,5 @@ class TrafficLight:
 
 
 t = TrafficLight()
-t.__color = ['Красный', 'Blue', 'Желтый', 'Зеленый']        # нет доступа
+t.__color = ['Красный', 'Blue', 'Желтый', 'Зеленый']  # нет доступа
 t.running()

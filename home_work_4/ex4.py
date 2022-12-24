@@ -8,10 +8,16 @@
 """
 
 mylist = [2, 2, 2, 7, 23, 1, 44, 44, 3, 2, 10, 7, 4, 11]
+mylist2 = [3, 2, 1]
 
-res_list = [el for el in mylist if mylist.count(el) == 1]
 
-print(res_list)
+def unique_items(lst):
+    return [el for el in lst if lst.count(el) == 1]
+
+
+print(unique_items(mylist))
+print(unique_items(mylist2))
+print(bool(unique_items(mylist2)))
 
 res = []
 for el in mylist:

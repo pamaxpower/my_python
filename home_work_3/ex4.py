@@ -38,8 +38,8 @@ def my_func_2(num, neg):
     return mult
 
 
-x = float(input())
-y = int(input())
+x = float(input('число'))
+y = int(input('степень'))
 
 print(f'Реадизация через произведение: {my_func_1(x, y)}')
 print(f'Реализация через цикл: {my_func_1(x, y)}')
