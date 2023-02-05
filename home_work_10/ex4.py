@@ -25,7 +25,9 @@ class Cell(metaclass=Singleton):
 
 cell1 = Cell()
 cell2 = Cell()
+print()
 print(cell1)
 print(cell2)
-print('a_1 is a_2 — ', cell1 is cell2)
+print()
+print(cell1 is cell2)
 
