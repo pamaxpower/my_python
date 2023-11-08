@@ -7,11 +7,12 @@
 
 # обычная функция
 
+
 def factorial(n):
     number = 1
     result = []
-    for i in range(1, n + 1):
-        number *= i
+    for j in range(1, n + 1):
+        number *= j
         result.append(number)
     return result
 
@@ -19,12 +20,12 @@ def factorial(n):
 #     print(f'{i}! = {num}')
 
 
-
 def factorial_2(n):
     number = 1
-    for i in range(1, n + 1):
-        number *= i
+    for j in range(1, n + 1):
+        number *= j
         yield number
+
 
 for i, num in enumerate(factorial_2(10), start=1):
     print(f'{i}! = {num}')
