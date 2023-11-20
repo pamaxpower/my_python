@@ -46,7 +46,7 @@ def func(date):
     # else: 
     #     print('Такой даты не существует')
 
-print(func('29.2.2000'))
+print(func('0.5.2022'))
 
 
 # def func1(date):
