@@ -17,3 +17,32 @@
 ✔ Имя файла и его размер должны быть в рамках переданного 
 диапазона
 """
+from random import randint, choices, randbytes
+from os import chdir, mkdir, getcwd
+
+# создаем новую директорию
+# Path('dir_4').mkdir()
+# print(Path.cwd())
+
+try:
+    mkdir('dir_4')
+    chdir('dir_4')
+except FileExistsError:
+    chdir('dir_4')
+
+# # переходим в эту директорию
+# chdir('dir_4')
+# print(Path.cwd())
+
+# при выполнении кода в новой папке создаются
+eng_alphabet = ''.join([chr(char) for char in range(ord('a'), ord('z') + 1)])
+
+def create_files(ext, files=42, min_len=6, max_len=30, min_bytes=256, max_bytes=4096):
+    
+    for _ in range(files):
+        name = ''.join(choices(eng_alphabet, k=randint(min_len, max_len))) + ext
+        size = randint(min_bytes, max_bytes)
+        with open(name, 'wb') as f:
+            f.write(randbytes(size))
+
+create_files('.txt', files=10) 
