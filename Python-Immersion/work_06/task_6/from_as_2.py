@@ -9,6 +9,7 @@ print(f'{func(100, 200) = }\n{randint(10, 20) = }')
 
 
 def func(a: int, b: int) -> int:
+    """  """
     return a + b
 
 

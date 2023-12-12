@@ -22,7 +22,7 @@ def save_txt_as_json(txt, json_f):
         for el in line:
             k, v = el.split('-')
             my_dict[k.title()] = float(v)
-        json.dump(my_dict, f_json, indent=2, separators=(',\n', ':'), ensure_ascii=False)
+        json.dump(my_dict, f_json, indent=2, separators=(',\n', ' : '), ensure_ascii=False)
 
 
 txt_file = 'task_3_copy.txt'
