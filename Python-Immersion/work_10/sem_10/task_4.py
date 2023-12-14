@@ -28,13 +28,16 @@ from task_3 import Info
     
 
 class Employee(Info):
+    def __init__(self, lastname, name, surname, age):
+        super().__init__(lastname, name, surname, age)
+        self.__employee_id = randint(100000, 999999)
+        self.__level = sum(int(i) for i in str(self.__employee_id)) % 7
+        
     def get_id(self):
-        self.employee_id = randint(100000, 999999)
-        return self.employee_id
+        return self.__employee_id
 
     def get_level(self):
-        self.level = sum(int(i) for i in str(self.employee_id)) % 7
-        return self.level
+        return self.__level
 
 e1 = Employee('Иванов', 'Иван', 'Иванович', 30)
 print(e1.get_id())

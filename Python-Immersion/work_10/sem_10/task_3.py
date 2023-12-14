@@ -22,9 +22,10 @@ class Info():
 
     def full_name(self):
         return f'Полное имя: {self.lastname} {self.name} {self.surname}'
-    
-n1 = Info('Иванов', 'Иван', 'Иванович', 30)
-print(n1.birthday())
-print(n1.full_name())
-n1.__age = 50
-print(n1.__age)
+
+if __name__ == '__main__':
+    n1 = Info('Иванов', 'Иван', 'Иванович', 30)
+    print(n1.birthday())
+    print(n1.full_name())
+    n1.__age = 50
+    print(n1.__age)
