@@ -6,18 +6,24 @@
 '''
 
 class User:
-    """A User training class for demonstrating class
+    """
+    A User training class for demonstrating class
     documentation.
     Shows the operation of the help(cls) and the dander method
-    __doc__"""
+    __doc__
+    """
 
     def __init__(self, name: str):
-        """Added the name parameter."""
+        """
+        Added the name parameter.
+        """
         self.name = name
         print(f'Создал {self.name = }')
 
     def simple_method(self):
-        """Example of a simple method."""
+        """
+        Example of a simple method.
+        """
         self.name.capitalize()
 
 u_1 = User('Спенглер')
