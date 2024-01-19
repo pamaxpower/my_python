@@ -50,8 +50,6 @@ def func():
         
             break
 
-func()
-
 # в классе
 # def func():
 #     res = []
