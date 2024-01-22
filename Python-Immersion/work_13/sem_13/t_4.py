@@ -116,7 +116,7 @@ user_1 = User('Виктор', '456', 5)
 my_p = Project()
 my_p.load_data('data.json')
 print(my_p.users)
-print(my_p.login('Виктор', '777'))
+# print(my_p.login('Виктор', '777'))
 my_p.add_user(user_1, 7)
 print(my_p.login('456'))
 
