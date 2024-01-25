@@ -73,9 +73,11 @@ class Archive:
 
 if __name__ == '__main__':
     archive1 = Archive("First Text", 3.14)
+    # print(archive1)
     archive2 = Archive("Second Text", 2)
+    # print(archive2)
     archive3 = Archive("Third Text", 3)
-
-    print(archive1)
-    print(archive2)
     print(archive3)
+    
+    
+    

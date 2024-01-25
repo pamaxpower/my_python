@@ -21,9 +21,9 @@ class Fibonacci:
             self.first, self.second = self.second, self.first + self.second
             if self.start <= self.first < self.stop:
                 return self.first
-        raise StopIteration
+        raise StopIteration()
 
-
+    
 fib = Fibonacci(20, 100)
 for num in fib:
     print(num)

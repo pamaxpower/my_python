@@ -29,8 +29,12 @@ __add__(self, other): Метод, определяющий операцию сл
 Проверяет, что обе матрицы имеют одинаковые размеры (количество строк и столбцов). 
 Если размеры совпадают, создает новую матрицу, где каждый элемент равен сумме соответствующих элементов входных матриц.
 
-__mul__(self, other): Метод, определяющий операцию умножения двух матриц. Проверяет, что количество столбцов в первой матрице равно количеству строк во второй матрице. Если условие выполняется, создает новую матрицу, где элемент на позиции [i][j] равен сумме произведений элементов соответствующей строки из первой матрицы и столбца из второй матрицы.
-
+__mul__(self, other): Метод, определяющий операцию умножения двух матриц. 
+Проверяет, что количество столбцов в первой матрице равно количеству строк во второй матрице. 
+Если условие выполняется, создает новую матрицу, где элемент на позиции [i][j] равен сумме произведений 
+элементов соответствующей строки из первой матрицы и столбца из второй матрицы.
+"""
+"""
 Пример
 
 На входе:
@@ -100,10 +104,19 @@ class Matrix:
         self.data = [[0]*cols for _ in range(rows)]
 
     def __str__(self):
-        res = ''
+        # res = ''
+        # for i in range(self.rows):
+        #     res += ' '.join(map(str, self.data[i])) + '\n'
+        # return res
+        
+        res = []
         for i in range(self.rows):
-            res += ' '.join(map(str, self.data[i])) + '\n'
-        return res
+            res += str(self.data[i])
+            # res += ' '.join(map(str, map(str, self.data[i])))
+            # print(res)
+            print(res)
+        return '\n'.join(res)
+        #return '\n'.join([' '.join([str(self.data[i][j]) for j in range(self.cols)]) for i in range(self.rows)])
     
     def __repr__(self):
         return f'Matrix({self.rows}, {self.cols})'
@@ -115,20 +128,53 @@ class Matrix:
             return False
         
     def __add__(self, other):
-        result_data = [[0]*self.cols for _ in range(self.rows)]
+        
         if (self.rows == other.rows) & (self.cols == other.cols):
+            result = Matrix(self.rows, self.cols)
             for i in range(self.rows):
                 for j in range(self.cols):
-                    result_data[i][j] = self.data[i][j] + other.data[i][j]
-            return ''.join(map(str, (result_data[i] for i in range(self.rows)))) 
+                    result.data[i][j] = self.data[i][j] + other.data[i][j] 
+            return result
         else:
             return 'Сложить нельзя'
+        
+    def __mul__(self, other): 
+        
+        if self.cols == other.rows:
+            res = Matrix(self.rows, other.cols)
+            for i in range(self.rows):
+                for j in range(other.cols):
+                    for k in range(self.cols):
+                        res.data[i][j] += self.data[i][k] * other.data[k][j]
+            return res
+        else:
+            return "Перемножить нельзя"
 
+# Создаем матрицы
 matrix1 = Matrix(2, 3)
 matrix1.data = [[1, 2, 3], [4, 5, 6]]
 
 matrix2 = Matrix(2, 3)
 matrix2.data = [[7, 8, 9], [10, 11, 12]]
 
-matrix_sum = matrix1 + matrix2
-print(matrix_sum)
+# Выводим матрицы
+print(matrix1)
+
+print(matrix2)
+
+# # Сравниваем матрицы
+# print(matrix1 == matrix2)
+
+# # Выполняем операцию сложения матриц
+# matrix_sum = matrix1 + matrix2
+# print(matrix_sum)
+
+# # Выполняем операцию умножения матриц
+# matrix3 = Matrix(3, 2)
+# matrix3.data = [[1, 2], [3, 4], [5, 6]]
+
+# matrix4 = Matrix(2, 2)
+# matrix4.data = [[7, 8], [9, 10]]
+
+# result = matrix3 * matrix4
+# print(result)

@@ -1,3 +1,6 @@
+'''
+Проверка
+'''
 class Text:
     def __init__(self, param):
         self.param = param
