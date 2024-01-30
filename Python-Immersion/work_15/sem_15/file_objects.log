@@ -1,0 +1,10 @@
+2024-01-30 15:01:43,138 - ERROR - name 'file_object' is not defined
+2024-01-30 15:03:31,722 - INFO - FileObject(name='file_objects', extension='.log', is_directory=False, parent_directory='sem_15')
+2024-01-30 15:03:31,722 - INFO - FileObject(name='log', extension=None, is_directory=True, parent_directory='sem_15')
+2024-01-30 15:03:31,722 - INFO - FileObject(name='task_1', extension='.py', is_directory=False, parent_directory='sem_15')
+2024-01-30 15:03:31,723 - INFO - FileObject(name='task_2', extension='.py', is_directory=False, parent_directory='sem_15')
+2024-01-30 15:03:31,723 - INFO - FileObject(name='task_3', extension='.py', is_directory=False, parent_directory='sem_15')
+2024-01-30 15:03:31,723 - INFO - FileObject(name='task_4', extension='.py', is_directory=False, parent_directory='sem_15')
+2024-01-30 15:03:31,723 - INFO - FileObject(name='task_5', extension='.py', is_directory=False, parent_directory='sem_15')
+2024-01-30 15:03:31,723 - INFO - FileObject(name='task_6', extension='.py', is_directory=False, parent_directory='sem_15')
+2024-01-30 15:03:31,723 - INFO - FileObject(name='__pycache__', extension=None, is_directory=True, parent_directory='sem_15')
