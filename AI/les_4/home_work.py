@@ -1,9 +1,3 @@
-'''
-Нейронная сеть с обучением, используя функцию потерь
-
-'''
-
-
 import numpy as np
 
 def sigmoid(x):
@@ -58,8 +52,8 @@ class OurNeuralNetwork:
         - all_y_trues - массив numpy с n элементами.
         Элементы all_y_trues соответствуют наблюдениям в data.
         '''
-        learn_rate = 0.1
-        epochs = 3000  # сколько раз нужно пройти по всему датасету
+        learn_rate = 0.4
+        epochs = 1000  # сколько раз нужно пройти по всему датасету
         print('Начинаем обучение')
         for epoch in range(epochs):
             for x, y_true in zip(data, all_y_trues):
@@ -151,19 +145,31 @@ if __name__ == '__main__':
     network.train(dataset, answer)
 
 
-    test_data = np.array([[2, 5], [10, 3], [8, 1], [5, 2], [-1, -5], [-2, -7], [6, 8], [-6, -3], [7, 4], [3, 9]])
-    test_labels = np.array([0, 1, 1, 1, 0, 0, 1, 0, 1, 0])
+    test_data = np.array([
+        [30, -5],
+        [19,-9],
+        [21,-6],
+        [22,-1],
+        [25,2],
+        [-14,-6],
+        [-4,-3],
+        [-5,-11],
+        [-3,-9],
+        [-9,-8]
+        ])
+    test_labels = np.array([0, 0, 0, 0, 0, 1, 1, 1, 1, 1])
 
     correct_predictions = 0
     for i, data in enumerate(test_data):
         prediction = network.predict(data)
+        print(prediction)
         if prediction >= 0.5 and test_labels[i] == 1:
             correct_predictions += 1
         elif prediction < 0.5 and test_labels[i] == 0:
             correct_predictions += 1
 
     accuracy = correct_predictions / len(test_data)
-    print(f'Точность для тестовых данных равна: {(1-accuracy)*100}%')
+    print(f'Точность для тестовых данных равна: {accuracy*100}%')
 
 
 
