@@ -63,7 +63,7 @@ def deposit(amount):
     """Пополнение счёта."""
     global bank_account, count
     if not check_multiplicity(amount) is True:
-        return False        # операвция не может быть выполнена
+        return False        # операция не может быть выполнена
     count += 1
     bank_account += amount
     operations.append(

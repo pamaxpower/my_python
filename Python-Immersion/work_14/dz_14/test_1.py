@@ -159,11 +159,11 @@ def test_area():
 
 def test_addition():
     """Тестирование операции сложения двух прямоугольников"""
-    r1 = Rectangle(5, 3)
-    r2 = Rectangle(1, 4)
-    rad = r1.__add__(r2)
-    assert rad.width, 6555
-    assert rad.height, 1.0
+    rect1 = Rectangle(5, 1)
+    rect2 = Rectangle(3, 4)
+    result = rect1 + rect2
+    assert result.width == 6
+    assert result.height == 7.0
 
 
 def test_negative_width():
@@ -206,28 +206,31 @@ def test_set_negative_height():
         r1.height = -6
 
 
+def test_subtraction_negative_result():
+    """Тестирование операции вычитания с отрицательным результатом"""
+    rect1 = Rectangle(3, 4)
+    rect2 = Rectangle(10, 1)
+    with pytest.raises(NegativeValueError):
+        rect1 - rect2
+
+
 def test_subtraction():
     """Тестирование операции вычитания двух прямоугольников"""
     r1 = Rectangle(10, 1)
     r2 = Rectangle(3, 4)
-    r3 = r1.__add__(r2)
-    assert r3.width, 11
-    assert r3.height, 7.0
-
-
-def test_subtraction_negative_result():
-    """Тестирование операции вычитания с отрицательным результатом"""
-    with pytest.raises(NegativeValueError):
-        Rectangle(3, 4) - Rectangle(10, 1)
+    r3 = r1 - r2
+    assert r3.width, 7
+    assert r3.height, -3
 
 
 def test_subtraction_same_perimeter():
     """Тестирование операции вычитания с одинаковым периметром"""
-    r1 = Rectangle(5, 4)
-    r2 = Rectangle(1, 3)
+    r1 = Rectangle(5, 1)
+    r2 = Rectangle(4, 3)
     r3 = r1 - r2
-    assert r3.width, 4
-    assert r3.height, 1.0
+    assert r3.width, 1
+    assert r3.height, -2
+
 
 
 if __name__ == '__main__':
@@ -255,8 +258,6 @@ if __name__ == '__main__':
         file_contents = new_file.read()
         # Выводим содержимое файла на экран
         #print(file_contents)
-
-
 
     # Открываем файл для записи
     with open('pytest_output.txt', 'w') as file:
