@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def sigmoid(x):
     # Сигмоида (функция активации): f(x) = 1 / (1 + e^(-x))
     return 1 / (1 + np.exp(-x))
@@ -26,18 +27,18 @@ class OurNeuralNetwork:
 
     def __init__(self):
         # Веса
-        self.w1 = np.random.uniform(-1,1)
-        self.w2 = np.random.uniform(-1,1)
-        self.w3 = np.random.uniform(-1,1)
-        self.w4 = np.random.uniform(-1,1)
-        self.w5 = np.random.uniform(-1,1)
-        self.w6 = np.random.uniform(-1,1)
+        self.w1 = np.random.uniform(-1, 1)
+        self.w2 = np.random.uniform(-1, 1)
+        self.w3 = np.random.uniform(-1, 1)
+        self.w4 = np.random.uniform(-1, 1)
+        self.w5 = np.random.uniform(-1, 1)
+        self.w6 = np.random.uniform(-1, 1)
         print(self.w1)
 
         # Пороги
-        self.b1 = np.random.uniform(-1,1)
-        self.b2 = np.random.uniform(-1,1)
-        self.b3 = np.random.uniform(-1,1)
+        self.b1 = np.random.uniform(-1, 1)
+        self.b2 = np.random.uniform(-1, 1)
+        self.b3 = np.random.uniform(-1, 1)
 
     def feedforward(self, x):
         # x - это массив numpy из двух элементов (два входных нейрона).
@@ -99,7 +100,7 @@ class OurNeuralNetwork:
                 # y_pred -> конечный выход из нейрона o1
                 # p_ypred_p_h1 = self.w5 * deriv_sigmoid(sum_o1) - вес w5 * производная от суммы весов в o1
                 # p_h1_p_w1 = x[0] * deriv_sigmoid(sum_h1) - значение входного нейрона x0 * производная от суммы весов в нейроне o1
-                
+
                 self.w2 -= learn_rate * p_L_p_ypred * p_ypred_p_h1 * p_h1_p_w2
                 self.b1 -= learn_rate * p_L_p_ypred * p_ypred_p_h1 * p_h1_p_b1
 
@@ -117,13 +118,12 @@ class OurNeuralNetwork:
             if epoch % 100 == 0:
                 y_preds = np.apply_along_axis(self.feedforward, 1, data)
                 loss = mse_loss(all_y_trues, y_preds)
-                print("Epoch %d loss: %.3f" % (epoch, loss))
+                print(f'Epoch {epoch} loss: {loss}')
         print('Заканчиваем обучение')
-
 
     def predict(self, x):
         return self.feedforward(x)
-    
+
 
 if __name__ == '__main__':
     # Определим набор данных
@@ -131,32 +131,31 @@ if __name__ == '__main__':
         [-2, -1],  # Алиса
         [25, 6],   # Боб
         [17, 4],   # Чарли
-        [-15, -6], # Диана
-        ])
-    
+        [-15, -6],  # Диана
+    ])
+
     answer = np.array([
-        1, # Алиса
-        0, # Боб
-        0, # Чарли
-        1, # Диана
-        ])
+        1,  # Алиса
+        0,  # Боб
+        0,  # Чарли
+        1,  # Диана
+    ])
 
     network = OurNeuralNetwork()
     network.train(dataset, answer)
 
-
     test_data = np.array([
         [30, -5],
-        [19,-9],
-        [21,-6],
-        [22,-1],
-        [25,2],
-        [-14,-6],
-        [-4,-3],
-        [-5,-11],
-        [-3,-9],
-        [-9,-8]
-        ])
+        [19, -9],
+        [21, -6],
+        [22, -1],
+        [25, 2],
+        [-14, -6],
+        [-4, -3],
+        [-5, -11],
+        [-3, -9],
+        [-9, -8]
+    ])
     test_labels = np.array([0, 0, 0, 0, 0, 1, 1, 1, 1, 1])
 
     correct_predictions = 0
@@ -170,6 +169,3 @@ if __name__ == '__main__':
 
     accuracy = correct_predictions / len(test_data)
     print(f'Точность для тестовых данных равна: {accuracy*100}%')
-
-
-
